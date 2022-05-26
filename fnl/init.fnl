@@ -1,3 +1,5 @@
+(import-macros {: set!} :macros.option-macros)
+
 ;; core 
 (require :core)
 
@@ -10,3 +12,7 @@
  (if compiled?
      (load-compiled)
      (. (require :packer) :sync)))
+
+
+(set! number)
+
